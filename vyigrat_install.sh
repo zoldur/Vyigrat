@@ -90,10 +90,6 @@ listen=1
 server=1
 daemon=1
 port=$COIN_PORT
-addnode=178.62.13.226:12698
-addnode=8.9.5.48:12698
-addnode=144.205.57.173:12698
-addnode=138.68.176.127:12698
 EOF
 }
 
@@ -128,6 +124,10 @@ maxconnections=256
 masternode=1
 externalip=$NODEIP:$COIN_PORT
 masternodeprivkey=$COINKEY
+addnode=178.62.13.226:12698
+addnode=8.9.5.48:12698
+addnode=144.205.57.173:12698
+addnode=138.68.176.127:12698
 EOF
 }
 
