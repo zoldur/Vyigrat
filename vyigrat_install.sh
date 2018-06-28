@@ -6,7 +6,7 @@ CONFIGFOLDER='/root/.vyigrat'
 COIN_DAEMON='vyigratd'
 COIN_CLI='vyigrat-cli'
 COIN_PATH='/usr/local/bin/'
-COIN_TGZ='https://github.com/vyigrat/vyigrat/releases/download/v1.0.0.0/vyigrat-ubuntu16.zip'
+COIN_TGZ='https://github.com/vyigrat/vyigrat/releases/download/v1.3.0.0/linux-1.3.0.0.zip'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='Vyigrat'
 COIN_PORT=12698
@@ -26,7 +26,7 @@ function download_node() {
   wget -q $COIN_TGZ
   compile_error
   unzip $COIN_ZIP >/dev/null 2>&1
-  cd linux
+  cd linux-1.3.0.0
   chmod +x $COIN_DAEMON $COIN_CLI
   cp $COIN_DAEMON $COIN_CLI $COIN_PATH
   cd ~ >/dev/null 2>&1
